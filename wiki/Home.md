@@ -1,5 +1,7 @@
 # J.O.O.N.A.S. Joyride
 
+> **LunarLink compatible.** J.O.O.N.A.S. Joyride runs on its own, and with [LunarLink](https://swheettaos.github.io/lunarlink/) it runs hot: reload it, turn it off (unloaded from memory) and update it from the game's F9 window, with no restart. See [[With LunarLink]].
+
 Ever feel like your J.O.O.N.A.S. keeps disappearing on you? Going on unauthorized breaks? **Hop on top of any
 J.O.O.N.A.S. and ride along** while your hardworking little cleaning robot goes about its business.
 
