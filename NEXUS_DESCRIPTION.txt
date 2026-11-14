@@ -1,0 +1,110 @@
+[center][b][size=6]J.O.O.N.A.S. Joyride[/size][/b][/center]
+[center][/center]
+[center][/center]
+[center][b][size=5]Ever feel like your J.O.O.N.A.S. keeps disappearing on you? Going on unauthorized breaks? Generally acting up?[/size][/b][/center]
+[center][/center]
+[center][/center]
+[center][b][size=5]Be the supervisor they deserve with J.O.O.N.A.S. Joyride. Hop on top of any J.O.O.N.A.S. and keep a closer eye on your hardworking little cleaning robot while it goes about its business.[/size][/b][/center]
+
+
+
+[b][size=4]CURRENT RELEASE[/size][/b]
+
+Mod: J.O.O.N.A.S. Joyride 1.0.2
+Target game build: Moon Sweepers 1.0.5
+Status: Stable 1.0.2 release
+
+[b]Please back up your save before using any mods.[/b]
+
+
+
+[b][size=4]FEATURES[/size][/b]
+
+[list]
+[*]Surf mode keeps you standing on top of the J.O.O.N.A.S.[/*]
+[*]Tank mode lowers you into the robot so only your head sticks out.[/*]
+[*]Mount and dismount nearby J.O.O.N.A.S. with the normal interact key.[/*]
+[*]Switch between Surf mode and Tank mode while mounted.[/*]
+[*]Cycle between first-person and third-person mounted camera views.[/*]
+[*]Remembers your preferred riding mode and mounted camera between mounts and game sessions.[/*]
+[/list]
+
+
+
+[b][size=4]CONTROLS[/size][/b]
+
+[list]
+[*]E: Mount or dismount a nearby J.O.O.N.A.S.[/*]
+[*]F: Switch between Surf mode and Tank mode while mounted.[/*]
+[*]C: Cycle between first-person and third-person mounted camera views.[/*]
+[/list]
+
+
+
+[b][size=4]MOD MANAGER SETTINGS[/size][/b]
+
+
+Diagnostics: enables verbose troubleshooting logs. Disabled by default.
+
+
+
+[b][size=4]REQUIREMENTS[/size][/b]
+
+Install these prerequisites before installing J.O.O.N.A.S. Joyride:
+
+[list]
+[*]BepInEx 6 IL2CPP for Moon Sweepers[/*]
+[*]The Moon Sweepers BepInEx compatibility patcher required by the game[/*]
+[*]MoonFramework 1.0.5.2[/*]
+[*]Moon Sweepers 1.0.5[/*]
+[/list]
+
+
+
+[b][size=4]INSTALLATION[/size][/b]
+
+[list=1]
+[*]Close Moon Sweepers completely.[/*]
+[*]Install and verify BepInEx and its Moon Sweepers compatibility patcher.[/*]
+[*]Install MoonFramework.[/*]
+[*]Extract the J.O.O.N.A.S. Joyride archive into the Moon Sweepers installation directory.[/*]
+[/list]
+
+Confirm that the plugin is located like this:
+
+Moon Sweepers/
+  BepInEx/
+    plugins/
+      JoonasJoyride/
+        JoonasJoyride.dll
+
+
+
+[b][size=4]NOTES[/size][/b]
+
+This mod does not change J.O.O.N.A.S. cleaning behavior or make the robot directly drivable. It simply lets you ride along in Surf or Tank mode.
+
+The mod was tested on Moon Sweepers 1.0.5 with the current BepInEx and MoonFramework setup. Game updates may require compatibility testing.
+
+
+
+[b][size=4]KNOWN LIMITATIONS[/size][/b]
+
+[list]
+[*]Surf and Tank modes are riding positions, not full vehicle-driving controls.[/*]
+[*]The mounted camera uses the game's vehicle-style third-person view when switched away from first person.[/*]
+[*]The mod depends on the game's J.O.O.N.A.S. and player-mounting systems; Moon Sweepers updates may require compatibility testing.[/*]
+[/list]
+
+
+
+[b][size=4]UNINSTALLATION[/size][/b]
+
+[list]
+[*]Back up any saves made while using the mod.[/*]
+[*]Close Moon Sweepers.[/*]
+[*]Remove the BepInEx/plugins/JoonasJoyride/ folder.[/*]
+[*]Leave BepInEx and MoonFramework installed if other mods use them.[/*]
+[/list]
+
+[center][b][size=6]And watch out for those capsule rockets![/size][/b][/center]

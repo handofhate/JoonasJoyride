@@ -1,0 +1,11 @@
+bin/
+obj/
+dist/
+release/
+*.zip
+*.user
+*.suo
+*.log
+lounge-*.txt
+station-*.txt
+seat-*.txt

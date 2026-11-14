@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>JoonasJoyride</AssemblyName>
+    <RootNamespace>JoonasJoyride</RootNamespace>
+    <RestoreIgnoreFailedSources>true</RestoreIgnoreFailedSources>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <BepInExStage Condition="'$(BepInExStage)' == ''">C:\Users\Ty\Documents\Projects\Moon Sweepers\Quantum Conveyors\work\staging\BepInEx</BepInExStage>
+    <MoonSweepersGameRoot Condition="'$(MoonSweepersGameRoot)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Moon Sweepers</MoonSweepersGameRoot>
+    <InteropDir>$(MoonSweepersGameRoot)\BepInEx\interop</InteropDir>
+    <PluginDir>$(MoonSweepersGameRoot)\BepInEx\plugins</PluginDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx.Core" HintPath="$(BepInExStage)\BepInEx\core\BepInEx.Core.dll" Private="false" />
+    <Reference Include="BepInEx.Unity.IL2CPP" HintPath="$(BepInExStage)\BepInEx\core\BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(BepInExStage)\BepInEx\core\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="Il2Cppmscorlib" HintPath="$(InteropDir)\Il2Cppmscorlib.dll" Private="false" />
+    <Reference Include="MoonFramework" HintPath="$(PluginDir)\MoonFramework.dll" Private="false" />
+    <Reference Include="Assembly-CSharp" HintPath="$(InteropDir)\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(InteropDir)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.PhysicsModule" HintPath="$(InteropDir)\UnityEngine.PhysicsModule.dll" Private="false" />
+    <Reference Include="Unity.InputSystem" HintPath="$(InteropDir)\Unity.InputSystem.dll" Private="false" />
+  </ItemGroup>
+
+  <Target Name="CopyPluginToLocalRuntime" AfterTargets="Build" Condition="'$(CopyToLocalRuntime)' == 'true'">
+    <MakeDir Directories="$(BepInExStage)\BepInEx\plugins\JoonasPassenger" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(BepInExStage)\BepInEx\plugins\JoonasPassenger" />
+  </Target>
+</Project>
