@@ -1,6 +1,6 @@
 # J.O.O.N.A.S. Joyride
 
-Current release: 1.0.2
+Current release: 1.0.3
 
 Ever feel like your J.O.O.N.A.S. keeps disappearing on you? Going on unauthorized breaks? Generally acting up?
 
@@ -22,6 +22,8 @@ The mod remembers your last Surf/Tank choice and mounted camera preference betwe
 ## Mod Manager settings
 
 - `Diagnostics` — enables verbose troubleshooting logs. Disabled by default.
+
+With Lunar Link installed, the mod also reports published GitHub releases in Lunar Link's Updates window.
 
 ## Installation
 
