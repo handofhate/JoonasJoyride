@@ -16,7 +16,7 @@ public sealed class Plugin : BasePlugin
 {
     public const string PluginGuid = "tylerun.moonsweepers.joonaspassenger";
     public const string PluginName = "J.O.O.N.A.S. Joyride";
-    public const string PluginVersion = "1.0.2";
+    public const string PluginVersion = "1.0.3";
 
     private static GameObject host;
     private static ManualLogSource logger;
@@ -193,6 +193,10 @@ public sealed class Plugin : BasePlugin
     {
         return Path.Combine(Paths.BepInExRootPath, "config", "JoonasJoyride.preferences");
     }
+
+    internal static void UpdateHot() => Runtime?.Update();
+    internal static void LateUpdateHot() => Runtime?.LateUpdate();
+    internal static string UpdateFeed() => "github:handofhate/JoonasJoyride";
 }
 
 // Lunar Link discovers this public lifecycle class by method name. The game can still load Plugin normally from
@@ -201,4 +205,7 @@ public sealed class JoonasJoyrideHot
 {
     public void Start(string state) => Plugin.StartHot();
     public string Stop() => Plugin.StopHot();
+    public void Update() => Plugin.UpdateHot();
+    public void LateUpdate() => Plugin.LateUpdateHot();
+    public string UpdateFeed() => Plugin.UpdateFeed();
 }

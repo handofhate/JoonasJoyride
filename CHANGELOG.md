@@ -1,3 +1,8 @@
+Version 1.0.3
+
+- Added Lunar Link's GitHub release update feed.
+- Added hot-mode update forwarding so mounting and mode controls continue working after a hot reload.
+
 Version 1.0.2
 
 - Added quiet-by-default logging with an optional Diagnostics setting in the Mod Manager.
