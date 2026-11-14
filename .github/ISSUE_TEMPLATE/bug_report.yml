@@ -1,0 +1,59 @@
+name: Bug report
+description: Something in J.O.O.N.A.S. Joyride doesn't work as it should
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      description: The steps, if you know them.
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part
+      options:
+        - Mounting or dismounting (E)
+        - Surf / Tank mode (F)
+        - The camera (C)
+        - A J.O.O.N.A.S. that can't be mounted
+        - Hot loading with LunarLink
+        - The game crashed or froze
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How it's installed
+      options:
+        - BepInEx/plugins/ (normal)
+        - BepInEx/hot/ with LunarLink
+        - Through a mod manager (Vortex or similar)
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: "The lines from `BepInEx/LogOutput.log` that mention J.O.O.N.A.S. Joyride. For more detail, turn on `Diagnostics` (in the mod manager, or `BepInEx/config/tylerun.moonsweepers.joonaspassenger.cfg`), make it happen again, and paste those lines."
+      render: text
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: "J.O.O.N.A.S. Joyride, BepInEx, MoonFramework, and the game."
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods
+      description: The other plugins you have installed.

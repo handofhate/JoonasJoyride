@@ -1,5 +1,7 @@
 # J.O.O.N.A.S. Joyride
 
+[Website](https://handofhate.github.io/JoonasJoyride/) · [Wiki](https://github.com/handofhate/JoonasJoyride/wiki) · [Nexus Mods](https://www.nexusmods.com/moonsweepers/mods/78) · [Report a problem](https://github.com/handofhate/JoonasJoyride/issues/new/choose)
+
 Current release: 1.0.3
 
 Ever feel like your J.O.O.N.A.S. keeps disappearing on you? Going on unauthorized breaks? Generally acting up?
